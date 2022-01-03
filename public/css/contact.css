@@ -1,0 +1,26 @@
+.contact .grid{
+    align-items: flex-start;
+}
+
+.contact .contact-gmail .form-control{
+    margin-top: 30px;
+}
+
+.contact .contact-gmail .form-control input[type="text"],
+.contact .contact-gmail .form-control input[type="email"]{
+    width: 80%;
+    font-size: 16px;
+    padding: 3px;
+    border: 0px;
+    border-bottom: 1px solid var(--main-dark-color);
+}
+
+.contact .contact-gmail .btn-send{
+    width: 80%;
+    margin-top: 20px;
+}
+
+.contact .contact-gmail .btn-send:hover{
+    transform: scale(1);
+    border: none;
+}

@@ -1,0 +1,76 @@
+<!-- Loign Form -->
+<div id="body-form">
+    <div id="login-form" class="card py-3 text-center">
+        <div class="close-btn" onclick="closeForm()"><i class="fas fa-times-circle fa-2x"></i></div>
+        <h2 class="my-1">Login <i class="fas fa-sign-in-alt"></i></h2>
+        <form class="my-3">
+            <div class="form-control">
+                <input type="text" name="username" placeholder="نام کاربری">
+            </div>
+            <div class="form-control">
+                <input type="password" name="password" placeholder="رمز عبور">
+            </div>
+            <input class="btn login-btn" type="submit" value="ورود">
+        </form>
+        <a onclick="openRegisterForm()" href="#" class="btn newAccount-btn">ساخت اکانت جدید</a>
+    </div>
+
+    <div id="register-form" class="card py-3 text-center">
+        <div class="close-btn" onclick="closeForm()"><i class="fas fa-times-circle fa-2x"></i></div>
+        <h2 class="my-1">Sign Up <i class="fas fa-sign-out-alt"></i></h2>
+        <form class="my-3">
+            <div class="form-control">
+                <input type="text" name="fullname" placeholder="نام و نام خانوادگی">
+            </div>
+            <div class="form-control">
+                <input type="text" name="username" placeholder="نام کاربری">
+            </div>
+            <div class="form-control">
+                <input type="text" name="phoneNumber" placeholder="شماره تلفن">
+            </div>
+            <div class="form-control">
+                <input type="email" name="email" placeholder="ایمیل">
+            </div>
+            <div class="form-control">
+                <input type="password" name="password" placeholder="رمز عبور">
+            </div>
+            <input class="btn login-btn" type="submit" value="ساخت اکانت">
+        </form>
+        <a onclick="openForm()" href="#" class="btn newAccount-btn">بازگشت به ورود</a>
+    </div>
+</div>
+
+
+
+<!-- Navbar -->
+<div id="navmenu" class="navbar">
+    <div class="container flex">
+        <button type="button" onclick="sideBarMenu()" id="bars-menu-btn"><i class="fas fa-bars"></i></button>
+        <nav>
+            <ul>
+                <li><a href="/">صفحه نخست</a></li>
+                <li><a href="/project">پروژه ها</a></li>
+                <li><a href="/about">درباره </a></li>
+                <li><a href="/contact">ارتباط با ما</a></li>
+            </ul>
+        </nav>
+
+        <nav class="div-login">
+            <a onclick="openForm()" href="#"><i class="fas fa-user"></i>ورود به حساب کاربری</a>
+        </nav>
+    </div>
+</div>
+
+<!-- SideBar Menu -->
+
+<div id="sidebar-menu">
+    <nav>
+        <ul>
+            <li><a href="/">صفحه نخست</a></li>
+            <li><a href="/project">پروژه ها</a></li>
+            <li><a href="/about">درباره </a></li>
+            <li><a href="/contact">ارتباط با ما</a></li>
+            <li><a onclick="openForm()" href="#"><i class="fas fa-user"></i>ورود به حساب کاربری</a></li>
+        </ul>
+    </nav>
+</div>

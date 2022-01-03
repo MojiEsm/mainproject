@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="stylesheet" href="../public/css/contact.css">
+    <link rel="stylesheet" href="../public/css/utility.css">
+    <title>Mojtaba Esmaili</title>
+</head>
+<body>
+    
+    <%-include('include/_header')%>
+
+
+    <!-- contact page -->
+
+    <section class="contact py-5">
+        <div class="container grid">
+            <div class="contact-info card py-3">
+                <pre>
+                    شماره تماس:09397599533
+                    آدرس ایمیل:mj.esm.1999@gmail.com
+                </pre>
+            </div>
+
+            <div class="contact-gmail card py-2 text-center">
+                <h3>ارتباط از طریق ایمیل</h3>
+                <form method="post" action="/send" class="my-1">
+                    <div class="form-control">
+                        <input type="text" name="name" placeholder="نام و نام خانوادگی">
+                    </div>
+                    <div class="form-control">
+                        <input type="email" name="email" placeholder="ایمیل">
+                    </div>
+                    <div class="form-control">
+                        <input type="text" name="subject" placeholder="موضوع">
+                    </div>
+                    <div class="form-control">
+                        <input type="text" name="message" placeholder="متن...">
+                    </div>
+                    <input class="btn btn-send" name="submit" onclick="sendEMail()" type="submit" value="ارسال">
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Footer -->
+    <%-include('include/_footer')%>
+    
+
+    <button onclick="topFunction()" id="backTop"><i class="fas fa-arrow-up"></i></button>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    
+</body>
+</html>
